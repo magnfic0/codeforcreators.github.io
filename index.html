@@ -3,14 +3,271 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Code for Creators LLC</title>
+  <title>Code for Creators</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap');
+
+    body {
+      margin: 0;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 3rem;
+      background-color: #121212;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #ccc;
+      font-weight: 400;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .btn {
+      background: #242424;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #333;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 600;
+      color: #fafafa;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero img {
+      width: 80%;
+      max-width: 1000px;
+      border-radius: 12px;
+      margin-top: 2rem;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    }
+
+    section {
+      padding: 3rem 4rem;
+    }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #f2f2f2;
+      margin-bottom: 1.2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 14px;
+      overflow: hidden;
+      padding: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    form {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    input, textarea {
+      width: 100%;
+      background: #111;
+      border: 1px solid #2a2a2a;
+      color: #fff;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #666;
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 1px solid #2a2a2a;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+      section {
+        padding: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Code for Creators LLC</h1>
-  <p>We build AI-powered caption tools and creative software for content creators.</p>
-  <p>Contact us: contact@codeforcreators.com</p>
+
+  <header>
+    <h1>Code for Creators</h1>
+    <nav>
+      <a href="#">News</a>
+      <a href="#">Our Story</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Social</a>
+    </nav>
+    <button class="btn">Get In Touch</button>
+  </header>
+
+  <div class="hero">
+    <h2>Innovate Beyond Boundaries</h2>
+    <img src="https://images.unsplash.com/photo-1669043998133-19ed64aebc6b?auto=format&fit=crop&w=1200&q=80" alt="Hero Image">
+  </div>
+
+  <section>
+    <p style="text-align:center;max-width:700px;margin:auto;font-size:1rem;color:#bbb;">
+      Cutting-edge technology solutions that move your business forward — securely, efficiently, and at scale.
+    </p>
+  </section>
+
+  <section>
+    <h3>Latest News</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1633356123236-4cdeedc539b0?auto=format&fit=crop&w=700&q=80" alt="News 1">
+        <h4>Retail Leader Cuts 35% in Infrastructure Costs With Edge Deployment</h4>
+        <p>Discover how a global retail chain modernized 800+ stores with a low-latency edge compute platform.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1633114077995-80a617db4c4a?auto=format&fit=crop&w=700&q=80" alt="News 2">
+        <h4>5G & IoT: What the Next Wave Means for Enterprise Security</h4>
+        <p>New spectrum rules are enabling unprecedented device density and security frameworks for scalable IoT.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1669043891399-352d84ad07cb?auto=format&fit=crop&w=700&q=80" alt="News 3">
+        <h4>AI Ethics: From Principles to Production</h4>
+        <p>Learn how organizations implement responsible AI guidelines at scale across data teams.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Solutions Designed for Real-World Impact</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Cloud Migration & Optimization</h4>
+        <p>Lift, shift, and transform with a proven framework that minimizes downtime and maximizes ROI.</p>
+        <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?auto=format&fit=crop&w=700&q=80" alt="">
+      </div>
+      <div class="card">
+        <h4>Custom Software Engineering</h4>
+        <p>From concept to code, we craft scalable applications tailored to your exact needs.</p>
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=700&q=80" alt="">
+      </div>
+      <div class="card">
+        <h4>Cybersecurity & Compliance</h4>
+        <p>Proactive threat modeling and audit-ready compliance keep your data protected.</p>
+        <img src="https://images.unsplash.com/photo-1611175694983-2282cc6a2d33?auto=format&fit=crop&w=700&q=80" alt="">
+      </div>
+      <div class="card">
+        <h4>Data Analytics & AI</h4>
+        <p>Unlock insights and automate decisions with modern data pipelines and ML models.</p>
+        <img src="https://images.unsplash.com/photo-1633356123236-4cdeedc539b0?auto=format&fit=crop&w=700&q=80" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div>
+      <h3>Let’s Keep In Touch</h3>
+      <p>Ready to explore what’s possible? Reach out for a no-obligation consultation and discover tailor-made solutions for your toughest tech challenges.</p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea rows="5" placeholder="Message" required></textarea>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </section>
+
   <footer>
-    <p>© 2025 Code for Creators LLC — All Rights Reserved.</p>
+    © 2025 Code for Creators. All rights reserved.
   </footer>
+
 </body>
 </html>
+
