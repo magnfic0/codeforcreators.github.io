@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caption For Creators</title>
+  <meta name="description" content="Caption For Creators — Instantly add captions to your videos and transform your content." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --bg:#111214; --card:#1a1b1f; --muted:#9aa0a6; --ring:#2a2b31; --white:#f3f4f6; --accent:#ffcc33;
+    }
+    html,body{background:var(--bg); color:var(--white);} 
+    .serif{font-family:"Playfair Display", ui-serif, Georgia, Cambria, Times, serif}
+    .sans{font-family:"Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial}
+    .pill{box-shadow:0 0 0 1px rgba(255,255,255,.08) inset}
+    .divider{height:1px; background:linear-gradient(90deg,transparent, rgba(255,255,255,.08), transparent)}
+  </style>
+</head>
+<body class="sans antialiased">
+  <div class="max-w-[1200px] mx-auto px-5 md:px-8">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center py-6">
+      <div class="flex items-center gap-2">
+        <img src="app-icon.png" alt="Caption For Creators Logo" class="w-10 h-10 rounded-lg"/>
+        <h1 class="text-xl font-semibold">Caption For Creators</h1>
+      </div>
+      <a href="#download" class="pill px-4 py-2 rounded-full text-sm font-medium bg-yellow-400/20 hover:bg-yellow-400/30 transition">Download App</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16">
+      <h2 class="serif text-4xl md:text-6xl font-semibold tracking-tight">Transform Videos with Captions</h2>
+      <p class="mt-6 max-w-2xl mx-auto text-gray-300 text-lg">Automatically add accurate, stylish captions to your videos in seconds. Designed for creators who want their content to shine.</p>
+      <div class="mt-10 flex justify-center">
+        <!-- <img src="app-preview.png" alt="App Preview" class="rounded-2xl shadow-lg max-w-full md:max-w-3xl" /> -->
+      </div>
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="#download" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">Download for iPhone</a>
+        <a href="#features" class="px-6 py-3 rounded-full border border-white/20 hover:bg-white/10 transition">Learn More</a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Features -->
+    <section id="features" class="py-16">
+      <h2 class="serif text-3xl md:text-5xl text-center font-semibold">Why Creators Love It</h2>
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <div class="bg-[#1a1b1f] p-8 rounded-2xl">
+          <h3 class="serif text-2xl mb-3">Instant Captions</h3>
+          <p class="text-gray-300">Upload your video, and get captions automatically generated in moments — no manual typing needed.</p>
+        </div>
+        <div class="bg-[#1a1b1f] p-8 rounded-2xl">
+          <h3 class="serif text-2xl mb-3">Creator-Friendly Design</h3>
+          <p class="text-gray-300">Clean, intuitive interface built for speed and focus. Edit and preview captions instantly.</p>
+        </div>
+        <div class="bg-[#1a1b1f] p-8 rounded-2xl">
+          <h3 class="serif text-2xl mb-3">Share Anywhere</h3>
+          <p class="text-gray-300">Export your captioned videos directly to social media platforms or save them to your device.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Screenshots Showcase -->
+    <section id="showcase" class="py-16 text-center">
+      <h2 class="serif text-3xl md:text-5xl font-semibold">See It In Action</h2>
+      <p class="text-gray-400 mt-4">Your videos, your voice — now more accessible and engaging than ever.</p>
+      <div class="mt-12 grid md:grid-cols-4 gap-6">
+        <img src="screenshot1.png" alt="Transform Videos" class="rounded-2xl shadow-lg" />
+        <img src="screenshot2.png" alt="Elevate Creation" class="rounded-2xl shadow-lg" />
+        <img src="screenshot3.png" alt="Instant Captions" class="rounded-2xl shadow-lg" />
+        <img src="screenshot4.png" alt="Add Captions Fast" class="rounded-2xl shadow-lg" />
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- About -->
+    <section id="about" class="py-16 text-center">
+      <h2 class="serif text-3xl md:text-5xl font-semibold">Built by Code For Creators</h2>
+      <p class="max-w-2xl mx-auto mt-6 text-gray-300">We’re a Houston-based software studio passionate about helping creators produce smarter, faster, and more accessible content. Caption For Creators is our step towards empowering storytellers worldwide.</p>
+    </section>
+
+    <!-- CTA -->
+    <section id="download" class="py-20 text-center">
+      <h2 class="serif text-3xl md:text-5xl font-semibold mb-6">Start Captioning Today</h2>
+      <p class="text-gray-300 mb-10">Join thousands of creators enhancing their videos with instant captions.</p>
+      <a href="#" class="bg-yellow-400 text-black px-10 py-4 rounded-full font-semibold text-lg hover:bg-yellow-300 transition">Download on the App Store</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-sm text-gray-400 text-center">
+      <div class="divider mb-6"></div>
+      <p>© <span id="year"></span> Code for Creators LLC. All rights reserved.</p>
+      <div class="mt-4 flex justify-center gap-6">
+        <a href="#" class="hover:text-white">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Support</a>
+        <a href="#" class="hover:text-white">Contact</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
